@@ -10,11 +10,12 @@ html {
 main {
   height: 100vh;
   display: flex;
+  overflow: hidden;
 }
 
 .hero {
   background-color: #f3e8c9;
-  width: 30%;
+  /* width: 30%; */
   text-align: center;
   height: 100%;
 }
@@ -26,6 +27,7 @@ main {
 
 .container {
   width: 70%;
+  overflow: auto;
 }
 
 .container .register {
@@ -153,7 +155,7 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type='number'] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -246,7 +248,7 @@ input[type='number'] {
 }
 
 .content ul li::marker {
-  content: '\f00c';
+  content: "\f00c";
   font-family: FontAwesome;
   font-size: 14px;
   color: #56f2c3;
@@ -300,8 +302,8 @@ select.form-input {
 }
 
 select.form-input:after {
-  content: '\f078';
-  content: '\f00c';
+  content: "\f078";
+  content: "\f00c";
   font-family: FontAwesome;
   font-size: 14px;
   color: #4e535b;
@@ -352,14 +354,14 @@ select.form-input:after {
   border: 1px solid rgba(20, 23, 55, 0.1) !important;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   display: none;
 }
 
 .radio-btn label {
 }
 
-input[type='radio']:checked + label {
+input[type="radio"]:checked + label {
   background-color: #dceaff;
   border: 1px solid #006aff !important;
 }
